@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog_CUR_VALUE</class>
+ <widget class="QDialog" name="dialog_CUR_VALUE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Накопленные значения</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_itgr"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Мгновенные значения</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_curr">
+      <item>
+       <widget class="QCheckBox" name="checkBox_upd_curr">
+        <property name="text">
+         <string>Автообновление</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

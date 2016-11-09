@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_connect">
+    <property name="title">
+     <string>Подключение</string>
+    </property>
+    <addaction name="action_connect"/>
+    <addaction name="action_connect_settings"/>
+   </widget>
+   <widget class="QMenu" name="menu_tools">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <widget class="QMenu" name="menu_calibration">
+     <property name="title">
+      <string>Калибровки</string>
+     </property>
+     <addaction name="action_calibration_A"/>
+     <addaction name="action_calibration_B"/>
+     <addaction name="action_calibration_C"/>
+     <addaction name="action_calibration_N"/>
+    </widget>
+    <addaction name="action_curr"/>
+    <addaction name="action_dev_settings"/>
+    <addaction name="action_tariff"/>
+    <addaction name="action_arch"/>
+    <addaction name="action_update_sw"/>
+    <addaction name="menu_calibration"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_connect"/>
+   <addaction name="menu_tools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_connect"/>
+   <addaction name="action_calibration_A"/>
+   <addaction name="action_calibration_B"/>
+   <addaction name="action_calibration_C"/>
+   <addaction name="action_calibration_N"/>
+  </widget>
+  <action name="action_exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_connect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Соединение</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_calibration_A">
+   <property name="text">
+    <string>Калибровка фазы A</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="action_calibration_B">
+   <property name="text">
+    <string>Калибровка фазы B</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_calibration_C">
+   <property name="text">
+    <string>Калибровка фазы C</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="action_calibration_N">
+   <property name="text">
+    <string>Калибровка нейтрали</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="action_curr">
+   <property name="text">
+    <string>Текущие значения</string>
+   </property>
+  </action>
+  <action name="action_tariff">
+   <property name="text">
+    <string>Настройка тарифов</string>
+   </property>
+  </action>
+  <action name="action_arch">
+   <property name="text">
+    <string>Просмотр архивов</string>
+   </property>
+  </action>
+  <action name="action_update_sw">
+   <property name="text">
+    <string>Обновление ПО</string>
+   </property>
+  </action>
+  <action name="action_connect_settings">
+   <property name="text">
+    <string>Параметры соединения</string>
+   </property>
+  </action>
+  <action name="action_dev_settings">
+   <property name="text">
+    <string>Настройки устройства</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
